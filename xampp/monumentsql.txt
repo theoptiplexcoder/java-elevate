@@ -1,0 +1,17 @@
+create table monuments(
+monument_id int(3),
+monument_name varchar(20),
+image blob,
+description text,
+primary key (monument_id)) engine = innodb;
+
+insert into monuments values(1,'Taj Mahal',load_file('/home/zaq/cslab/xampp/tajmahal.jpg'),
+load_file('/home/zaq/cslab/xampp/tajmahal.txt'));
+insert into monuments values(2,'Golgumbaz',LOAD_FILE('/home/zaq/cslab/xampp/golgumbaz.jpg'),
+load_file('/home/zaq/cslab/xampp/golgumbaz.txt'));
+insert into monuments values(3,'Mysore Palace',load_file('/home/zaq/cslab/xampp/mysorepalace.jpg'),
+load_file('/home/zaq/cslab/xampp/mysorepalace.txt'));
+insert into monuments values(4,'Vidhana Soudha',load_file('/home/zaq/cslab/xampp/vidhanasoudha.jpg'),
+load_file('/home/zaq/cslab/xampp/vidhanasoudha.txt'));
+insert into monuments values(5,'Stone Chariot',load_file('/home/zaq/cslab/xampp/stonechariot.jpg'),
+load_file('/home/zaq/cslab/xampp/stonechariot.txt'));

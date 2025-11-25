@@ -1,0 +1,108 @@
+- Organization
+
+/*
+multiline comments
+multiline comments
+*/
+
+create table users(
+username varchar(20),
+password varchar(20),
+role varchar(10),
+primary key (username)) engine = innodb;
+
+create table departments(
+dept_no int(2),
+dept_name varchar(30),
+primary key (dept_no)) engine = innodb;
+
+create table employees(
+emp_id int(3),
+emp_name varchar(20),
+gender varchar(1),
+salary int(5),
+email varchar(20),
+dept_no int(2),
+primary key (emp_id),
+foreign key (dept_no) references departments(dept_no)) engine = innodb;
+
+insert into users values('john123','john456','admin');
+insert into users values('bob123','bob456','admin');
+insert into users values('rita123','rita456','user');
+insert into users values('ann123','ann456','user');
+
+insert into departments values(10,'Marketing');
+insert into departments values(20,'Finance');
+insert into departments values(30,'Administration');
+insert into departments values(40,'Software Development');
+insert into departments values(50,'Software Testing');
+insert into departments values(60,'Software Support');
+insert into departments values(70,'Human Resource');
+
+insert into employees values(101,'John','M',20000,'john@gmail.com',10);
+insert into employees values(102,'Joseph','M',22000,'joseph@gmail.com',10);
+insert into employees values(103,'Bob','M',50000,'bob@gmail.com',10);
+insert into employees values(104,'Nora','F',23000,'nora@gmail.com',10);
+insert into employees values(105,'Stella','F',24000,'stella@gmail.com',10);
+insert into employees values(106,'Ivy','F',26000,'ivy@gmail.com',10);
+
+insert into employees values(201,'Ann','F',20000,'ann@gmail.com',20);
+insert into employees values(202,'Rita','F',20000,'rita@gmail.com',20);
+insert into employees values(203,'Mary','F',50000,'mary@gmail.com',20);
+insert into employees values(204,'David','M',20000,'david@gmail.com',20);
+insert into employees values(205,'Gabriel','M',20000,'gabriel@gmail.com',20);
+insert into employees values(206,'Mathew','M',20000,'mathew@gmail.com',20);
+
+insert into employees values(301,'Ann','F',60000,'ann@gmail.com',30);
+insert into employees values(302,'Francis','M',30000,'francis@gmail.com',30);
+insert into employees values(303,'Adam','F',30000,'adam@gmail.com',30);
+insert into employees values(304,'Benzamin','M',30000,'benzamin@gmail.com',30);
+insert into employees values(305,'Daniel','M',30000,'daniel@gmail.com',30);
+insert into employees values(306,'Ruby','F',20000,'ruby@gmail.com',30);
+insert into employees values(307,'Elena','F',20000,'elena@gmail.com',30);
+
+insert into employees values(401,'Peter','M',60000,'peter@gmail.com',40);
+insert into employees values(402,'Marsh','M',30000,'marsh@gmail.com',40);
+insert into employees values(403,'Alan','M',30000,'alan@gmail.com',40);
+insert into employees values(404,'Henry','M',30000,'henry@gmail.com',40);
+insert into employees values(405,'George','M',30000,'george@gmail.com',40);
+insert into employees values(406,'Jack','M',30000,'jack@gmail.com',40);
+insert into employees values(407,'William','M',45000,'william@gmail.com',40);
+insert into employees values(408,'Leo','M',45000,'leo@gmail.com',40);
+insert into employees values(409,'Kelvin','M',30000,'kelvin@gmail.com',40);
+insert into employees values(410,'Stefan','M',30000,'stefan@gmail.com',40);
+insert into employees values(411,'Randy','M',30000,'randy@gmail.com',40);
+insert into employees values(412,'Alfred','M',30000,'alfred@gmail.com',40);
+insert into employees values(413,'Darwin','M',30000,'darwin@gmail.com',40);
+insert into employees values(414,'Veer','M',30000,'veer@gmail.com',40);
+insert into employees values(415,'Kole','M',30000,'kole@gmail.com',40);
+insert into employees values(416,'Neo','M',30000,'neo@gmail.com',40);
+insert into employees values(417,'Dane','M',30000,'dane@gmail.com',40);
+insert into employees values(418,'Nixon','M',30000,'nixon@gmail.com',40);
+
+insert into employees values(501,'Arthur','M',60000,'arther@gmail.com',50);
+insert into employees values(502,'Michel','M',42000,'michel@gmail.com',50);
+insert into employees values(503,'Eliza','F',42000,'eliza@gmail.com',50);
+insert into employees values(504,'Olive','F',42000,'olive@gmail.com',50);
+insert into employees values(505,'Ada','F',42000,'ada@gmail.com',50);
+insert into employees values(506,'Sara','F',42000,'sara@gmail.com',50);
+
+insert into employees values(601,'Maria','F',60000,'maria@gmail.com',60);
+insert into employees values(602,'Sarah','F',36000,'sarah@gmail.com',60);
+insert into employees values(603,'Clara','F',36000,'clara@gmail.com',60);
+insert into employees values(604,'Eva','F',40000,'eva@gmail.com',60);
+insert into employees values(605,'Julia','F',40000,'julia@gmail.com',60);
+insert into employees values(606,'Margaret','F',35000,'margaret@gmail.com',60);
+insert into employees values(607,'Emily','F',35000,'emily@gmail.com',60);
+insert into employees values(608,'Richard','M',41000,'richard@gmail.com',60);
+insert into employees values(609,'Charlie','M',41000,'charlie@gmail.com',60);
+
+insert into employees values(701,'Bella','F',60000,'bella@gmail.com',70);
+insert into employees values(702,'Lucy','F',30000,'lucy@gmail.com',70);
+insert into employees values(703,'Alice','F',30000,'alice@gmail.com',70);
+insert into employees values(704,'Iris','F',30000,'iris@gmail.com',70);
+insert into employees values(705,'Sofia','F',30000,'sofia@gmail.com',70);
+insert into employees values(706,'Mia','F',20000,'mia@gmail.com',70);
+insert into employees values(707,'Jane','F',20000,'jane@gmail.com',70);
+
+
